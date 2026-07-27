@@ -34,3 +34,20 @@ a{
     display: flex;
     gap: 24px;
 }
+.menu{
+    display: none;
+}
+@media screen and (min-width:320px) and (max-width:991px) {
+    .container{
+    width: calc(100% - 40px);
+    }
+    .list{
+        display: none;
+    }
+    .icons_hidden{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}

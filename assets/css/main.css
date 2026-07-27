@@ -16,12 +16,14 @@ a{
 .row{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
 }
 .header{
     background-color: rgb(255, 255, 255);
     padding: 31.84px;
+}
+.header .row{
+    justify-content: space-between;
 }
 .list ul{
     display: flex;
@@ -51,3 +53,23 @@ a{
         display: block;
     }
 }
+.collictions .row{
+    gap: 30px;
+}
+    .colliction{
+        text-align: center;
+        width: calc((100% - 90px) / 4);
+    }
+    .colliction img{
+        width: 100%;
+    }
+@media screen and (min-width:600px) and (max-width:991px){
+  .colliction{
+        width: calc((100% - 30px) / 2);
+    }
+}
+  @media screen and (min-width:320px) and (max-width:599px){
+.colliction{
+        width: 100% ;
+    }
+ }
